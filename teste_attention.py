@@ -33,7 +33,7 @@ def test_weights_sum_to_one():
     npt.assert_array_almost_equal(row_sums, np.ones_like(row_sums), decimal=6, err_msg="Attention weights do not sum to 1")
     print("test_weights_sum_to_one passed.")
 
-def teste_output_shape():
+def test_output_shape():
     output, _ = scaled_dot_product_attention(Q, K, V)
     expected_shape = (Q.shape[0], V.shape[1])
     assert output.shape == expected_shape, f"Expected output shape {expected_shape}, got {output.shape}"
