@@ -6,19 +6,19 @@ Q = np.array([
     [1.0, 0.0, 1.0, 0.0],
     [0.0, 1.0, 0.0, 1.0],
     [1.0, 1.0, 0.0, 0.0],
-]), dtype=np.float64 
+], dtype=np.float64 ) 
 
 K = np.array([
     [1.0, 0.0, 1.0, 0.0],
     [0.0, 1.0, 0.0, 1.0],
     [1.0, 1.0, 1.0, 1.0],
-]), dtype=np.float64
+], dtype=np.float64)
 
 V = np.array([
     [1.0, 0.0],
     [0.0, 1.0],
     [1.0, 1.0],
-])
+], dtype=np.float64)
 
 def _compute_reference_output(Q, K, V):
     d_k = K.shape[1]
